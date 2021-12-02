@@ -41,12 +41,12 @@ def mode(data):
     new_data = Counter(data)
     mode_data_for_range = {'50-60':0,'60-70':0,'70-80':0}
 
-    for height,occurence in new_data.items(): 
-        if(50<float(height)<60):
+    for weight,occurence in new_data.items(): 
+        if(50<float(weight)<60):
             mode_data_for_range['50-60']+=occurence
-        elif(60<float(height)<70):
+        elif(60<float(weight)<70):
             mode_data_for_range['60-70']+=occurence
-        elif(70<float(height)<80):
+        elif(70<float(weight)<80):
             mode_data_for_range['70-80']+=occurence
 
     mode_range,mode_occurence = 0,0
